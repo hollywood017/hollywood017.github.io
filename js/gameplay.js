@@ -74,7 +74,7 @@ projectFlap.Game.prototype = {
 
 	function die(){
 		localStorage.setItem("topFlappyScore",Math.max(score,topScore));
-		projectFlap.game.state.start("mainmenu");
+		projectFlap.game.state.start("start");
 	}
 
 	Pipe = function (game, x, y, speed, type) {
