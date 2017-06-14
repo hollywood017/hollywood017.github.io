@@ -16,7 +16,7 @@ projectFlap.preloader.prototype = {
 
     //load game assets
     projectFlap.game.load.image('tap',"assets/tapTapdirect.png");
-    projectFlap.game.load.image('opening', "assets/backgroundopening.png");
+    projectFlap.game.load.image('opening', "assets/backgroundOpening.png");
     projectFlap.game.load.image('background', "assets/background.png");
     projectFlap.game.load.image('flappyBird', "assets/flappyBird.png");
     projectFlap.game.load.image('bird', "assets/yellowBirdUp.png");
@@ -27,6 +27,6 @@ projectFlap.preloader.prototype = {
     projectFlap.game.load.image("gameOver", "assets/GameOver.png");
   },
   create:function () {
-    this.state.start('MainMenu');
+    this.state.start('mainmenu');
   },
 };
