@@ -1,7 +1,7 @@
 
 var projectFlap = projectFlap || {};
 
- projectFlap.game = new Phaser.Game(320, 480, Phaser.CANVAS, '');
+ projectFlap.game = new Phaser.Game(450, 610, Phaser.CANVAS, '');
 console.log(projectFlap.boot);
 console.log(projectFlap.preloader);
 console.log(projectFlap.mainmenu);

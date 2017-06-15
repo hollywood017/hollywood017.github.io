@@ -64,10 +64,10 @@ projectFlap.game_play.prototype = {
 
 	function addPipe(){
 		var pipeHolePosition = projectFlap.game.rnd.between(50,430-pipeHole);
-		var upperPipe = new Pipe(projectFlap.game, 320, pipeHolePosition-480, -birdSpeed, 'highpipe');
+		var upperPipe = new Pipe(projectFlap.game, 450, pipeHolePosition-480, -birdSpeed, 'highpipe');
 		projectFlap.game.add.existing(upperPipe);
 		pipeGroup.add(upperPipe);
-		var lowerPipe = new Pipe(projectFlap.game, 320, pipeHolePosition+pipeHole, -birdSpeed, 'lowpipe');
+		var lowerPipe = new Pipe(projectFlap.game, 450, pipeHolePosition+pipeHole, -birdSpeed, 'lowpipe');
 		projectFlap.game.add.existing(lowerPipe);
 		pipeGroup.add(lowerPipe);
 	}
