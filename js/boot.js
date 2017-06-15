@@ -3,7 +3,7 @@ projectFlap.boot = function () {};
 
 projectFlap.boot.prototype = {
   preload:function () {
-    this.load.image('logo', 'assets/flappyBird.png');
+    this.load.image('logo', 'assets/flappy_bird.png');
     this.load.image('preloaderbar', 'assets/preloader-bar.png');
   },
   create:function () {

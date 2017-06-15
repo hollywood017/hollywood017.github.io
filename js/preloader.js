@@ -15,16 +15,16 @@ projectFlap.preloader.prototype = {
 
 
     //load game assets
-    projectFlap.game.load.image('tap',"assets/tapTapdirect.png");
-    projectFlap.game.load.image('opening', "assets/backgroundOpening.png");
+    projectFlap.game.load.image('tap',"assets/tap_tap_direct.png");
+    projectFlap.game.load.image('opening', "assets/background_opening.png");
     projectFlap.game.load.image('background', "assets/background.png");
-    projectFlap.game.load.image('flappyBird', "assets/flappyBird.png");
-    projectFlap.game.load.image('bird', "assets/yellowBirdUp.png");
-    projectFlap.game.load.image('playbtn', "assets/playButton.png");
-    projectFlap.game.load.image('leaderboard', "assets/leaderBoard.png");
+    projectFlap.game.load.image('flappyBird', "assets/flappy_bird.png");
+    projectFlap.game.load.image('bird', "assets/yellow_bird_up.png");
+    projectFlap.game.load.image('playbtn', "assets/play_button.png");
+    projectFlap.game.load.image('leaderboard', "assets/leader_board.png");
     projectFlap.game.load.image("pippen", "assets/pipe.png");
-    projectFlap.game.load.image("bird", "assets/yellowBirdUp.png");
-    projectFlap.game.load.image("gameOver", "assets/GameOver.png");
+    projectFlap.game.load.image("bird", "assets/yellow_bird_up.png");
+    projectFlap.game.load.image("game_over", "assets/game_over.png");
   },
   create:function () {
     this.state.start('main_menu');
