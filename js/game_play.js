@@ -1,6 +1,6 @@
 var projectFlap = projectFlap || {};
 
-projectFlap.Game = function () {};
+projectFlap.game_play = function () {};
 var bird;
 // bird gravity, will make bird fall if you don't flap
 var birdGravity = 800;
@@ -17,7 +17,7 @@ var score=0;
 var scoreText;
 var topScore;
 
-projectFlap.Game.prototype = {
+projectFlap.game_play.prototype = {
   create:function(){
     //set world dimensions
 
@@ -53,9 +53,9 @@ projectFlap.Game.prototype = {
   			}
   		}
 };
-
+    //update this
     function updateScore(){
-		scoreText.text = "Score: "+score+"\nBest: "+topScore;
+		scoreText.text = "Score: "+ score + "\nBest: " + topScore;
 	}
 
 	function flap(){
@@ -74,7 +74,7 @@ projectFlap.Game.prototype = {
 
 	function die(){
 		localStorage.setItem("topFlappyScore",Math.max(score,topScore));
-		projectFlap.game.state.start("start");
+		projectFlap.game.state.start("main_menu");
 	}
 
 	Pipe = function (game, x, y, speed, type) {

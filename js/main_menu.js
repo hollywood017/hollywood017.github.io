@@ -1,9 +1,9 @@
 var projectFlap = projectFlap || {};
 
-projectFlap.mainmenu = function () {};
+projectFlap.main_menu = function () {};
 
 
-projectFlap.mainmenu.prototype = {
+projectFlap.main_menu.prototype = {
   init: function (score) {
     this.highestScore = this.highestScore || 0;
     this.highestScore = Math.max(score, this.highestScore);
@@ -49,7 +49,7 @@ projectFlap.mainmenu.prototype = {
   },
   update: function () {
     if(this.game.input.activePointer.justPressed() ) {
-      this.game.state.start('gameplay');
+      this.game.state.start('game_play');
     }
   }
   // createButton: function (game, image, x, y, w, h, callback) {

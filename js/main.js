@@ -8,7 +8,7 @@ console.log(projectFlap.mainmenu);
 console.log(projectFlap.gameplay);
   projectFlap.game.state.add('boot', projectFlap.boot);
   projectFlap.game.state.add('preloader', projectFlap.preloader);
-  projectFlap.game.state.add('start', projectFlap.mainmenu);
-  projectFlap.game.state.add('Game', projectFlap.gameplay);
+  projectFlap.game.state.add('main_menu', projectFlap.main_menu);
+  projectFlap.game.state.add('game_play', projectFlap.game_play);
 
   projectFlap.game.state.start('boot');

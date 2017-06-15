@@ -27,6 +27,6 @@ projectFlap.preloader.prototype = {
     projectFlap.game.load.image("gameOver", "assets/GameOver.png");
   },
   create:function () {
-    this.state.start('start');
+    this.state.start('main_menu');
   },
 };
