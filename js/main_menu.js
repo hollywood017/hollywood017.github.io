@@ -19,33 +19,6 @@ projectFlap.main_menu.prototype = {
     var style = {font: "30px Arial", fill: '#fff', align:'center'};
     var t = this.game.add.text(this.game.width/2, this.game.height/2, text, style);
     t.anchor.set(0.5);
-    // var button = projectFlap.game.add.button(this.game.world.centerX, this.game.world.centerY, 'tap',
-    //                     function openWindow() {
-    //                         alert('Hello Phaser!');
-    //                     }
-    //                   );
-    //     button.anchor.set(0.5);
-    //     button.input.useHandCursor = true;
-
-    // var playButton = "tap";
-    // var i = this.game.add.image(this.game.width/2, this.game.height/2, playButton);
-    // i.anchor.set(0.5);
-    //Highest Score
-
-
-  //   this.createButton(game, "playbtn", game.world.centerx, game.world.centery + 0, 300, 100,
-  //   function () {
-  //     this.state.start('play');
-  //     }
-  //   );
-  //   this.createButton(game, "leaderBoard", game.world.centerx, game.world.centery + 32, 300, 100,
-  //     function () {
-  //       console.log("leader");
-  //     }
-  //   );
-  //   background = game.add.sprite(game.world.centerx, game.world.centery, -32, 'background');
-  //   background.anchor.setTo(0.5, 0.5);
-  //
   },
   update: function () {
     if(this.game.input.activePointer.justPressed() ) {

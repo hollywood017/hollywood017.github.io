@@ -25,6 +25,9 @@ projectFlap.preloader.prototype = {
     projectFlap.game.load.image("pippen", "assets/pipe.png");
     projectFlap.game.load.image("bird", "assets/yellow_bird_up.png");
     projectFlap.game.load.image("game_over", "assets/game_over.png");
+    projectFlap.game.load.image("tryagain", "http://i221.photobucket.com/albums/dd22/djmid71/tryagain_zpszyvxhs8m.png");
+    projectFlap.game.load.image("yes","http://i221.photobucket.com/albums/dd22/djmid71/yes_zpsfppqya7h.png");
+    projectFlap.game.load.image("no","http://i221.photobucket.com/albums/dd22/djmid71/no_zpsnjisaare.png");
   },
   create:function () {
     this.state.start('main_menu');

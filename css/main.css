@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'FlappyBirdy';
+  src: url('../font/FlappyBirdy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+  text-align: center;
+}
+
+.title{
+  font-family: 'FlappyBirdy';
+  font-size: 70px;
+}
