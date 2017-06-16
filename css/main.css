@@ -14,8 +14,8 @@ header{
 
 .title{
   font-family: 'FlappyBirdy';
-  font-size: 95;
-  margin-bottom: 0;
+  font-size: 95px;
+  margin-bottom: 0px;
 
 /*#flappyGame {
   position: relative;
