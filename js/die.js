@@ -1,61 +1,22 @@
+
 var projectFlap = projectFlap || {};
 
 projectFlap.die = function () {};
 
-
 projectFlap.die.prototype = {
-  create: function () {
-    reg.modal = new gameModal(game);
-    createModals();
-    var m3 = this.game.add.button(30, 50, "m3", showModal);
-  },
-  update: function () {
+	init: function(score){
+		alert("Score: "+ score + "\nBest: " + topScore);
+	},
+  	create: function(){
+      this.background = this.game.add.tileSprite(0, 0, this.game.width, this.game.height, 'opening');
+      this.background.autoScroll(-20, 0);
 
-  },
-
+  	var gameOverTitle = this.game.add.sprite(this.game.width/2, this.game.height/2,"game_over");
+		gameOverTitle.anchor.setTo(0.5,0.5);
+		var playButton = this.game.add.button(230,360,"playbtn",this.MainMenu,this);
+		playButton.anchor.setTo(0.5,0.5);
+    $("#replay").click(function(){
+      projectFlap.game.state.start("main_menu");
+    });
+	},
 };
-
-function createModals() {
-  reg.modal.createModal({
-            includeBackground: true,
-            modalCloseOnInput: true,
-  itemsArr: [
-                {
-                    type: "image",
-                    content: "game_over",
-                    offsetY: -110,
-                    contentScale: 0.6
-            },
-                {
-                    type: "image",
-                    content: "tryagain",
-                    contentScale: 0.6
-            },
-                {
-                    type: "image",
-                    content: "yes",
-                    offsetY: 100,
-                    offsetX: -80,
-                    contentScale: 0.6,
-                    callback: function () {
-                        alert("YES!");
-                      window.console.log("yes");
-                    }
-            },
-                {
-                    type: "image",
-                    content: "no",
-                    offsetY: 100,
-                    offsetX: 80,
-                    contentScale: 0.6,
-                    callback: function () {
-                        alert("NO!");
-                    }
-            }
-            ]
-   });
-}
-
-function showModal3() {
-  reg.modal.showModal("modal3");
-}

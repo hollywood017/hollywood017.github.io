@@ -4,7 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  margin: 0;
+  width: 100%;
+}
 header{
   text-align: center;
 }
@@ -12,4 +15,51 @@ header{
 .title{
   font-family: 'FlappyBirdy';
   font-size: 70px;
+}
+
+/*#flappyGame {
+  position: relative;
+  left: 33%;
+}*/
+
+.content {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#flappyGame {
+  text-align: center;
+}
+
+canvas {
+  margin: 0 auto;
+}
+#startScreen{
+  background-color: #8CCCBE;
+  background-image: url(../images/startPage.png);
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#go {
+  width: 348px;
+  height: 64px;
+  border-radius: 7px;
+  background-color: #B8E986;
+  border: 1px solid gray;
+  font-family: 'Audiowide', cursive;
+  position: relative;
+  top:341px;
+  left:106px;
+  font-size: 50px;
+}
+#replay{
+  position: relative;
+  top: 374px;
+  left: 5px;
+  height: 29px;
+  width: 52px;
+  opacity: 0;
 }
